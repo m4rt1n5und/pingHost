@@ -1,0 +1,2 @@
+# pingHost
+ping a host
