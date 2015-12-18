@@ -27,7 +27,9 @@ namespace pingHost
         public static void sendPush(string host, string port)
         {
             Exception except;
-            bool notify = Pushover.SendNotification("LJNNaBNdqGKaVQeT38V8Y58EjMqA4d", "uga8cddE5ocHaCNtF4UmWXMEwMAXrs", "Host " + host + " port " + port + " is down", out except);
+            // Your pushover key goes here
+            //bool notify = Pushover.SendNotification("LJNNaBNdqGKaVQeT38V8Y58EjMqA4d", "PUSHOVER KEY", "Host " + host + " port " + port + " is down", out except);
+
         }
 
         public static void checkHost(string host, string port)
@@ -52,7 +54,7 @@ namespace pingHost
 
                 if (args == null || args.Length == 0)
                 {
-                    Console.Out.WriteLine("No arguments, try pingHost 78.73.27.83 80");
+                    Console.Out.WriteLine("No arguments, try pingHost ip-adress");
                 }
                 else
                 {
